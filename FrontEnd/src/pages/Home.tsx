@@ -15,7 +15,7 @@ export default function Home() {
   }
 
   return (
-    <view className="h-full w-screen  px-10 flex flex-col tablet:px-40 max-smart:px-6 max-tablet:px-24 ">
+    <view className="h-full w-screen px-10 flex flex-col tablet:px-40 max-smart:px-6 max-tablet:px-24 ">
       <Header />
       <div className=" flex-col flex h-full items-center gap-14 tablet:gap-24 tablet:flex-row">
         <div className="window:w-max w-full">
