@@ -1,9 +1,18 @@
-import React from "react"
-import { NavLink } from "react-router-dom"
+import React, { useState } from "react"
 import { CardMeal } from "../components/CardMeal"
 import Header from "../components/Header"
+import axios from 'axios'
+import { api } from "../lib/axios"
 
 export default function Home() {
+  const [meals,setMeals] = useState([])
+
+  async function handleButtonReq(){
+    const response = await api.get('/ingridients')
+    
+    return console.log(response.data)
+  }
+
   return (
     <>
       <Header />
@@ -13,11 +22,9 @@ export default function Home() {
             Want a tip on what to <br />
             <span className="text-orange-500 ">eat today?</span>
           </h1>
-          <NavLink to="/mealplan" title="Meal Plan">
-            <button className=" rounded-xl px-10 py-3 bg-orange-500 h-25 w-516 text-white font-bold hover:bg-white hover:text-orange-500 transition-all ease-in duration-200">
+            <button onClick={handleButtonReq} className=" rounded-xl px-10 py-3 bg-orange-500 h-25 w-516 text-white font-bold hover:bg-white hover:text-orange-500 transition-all ease-in duration-200">
               Comprar
             </button>
-          </NavLink>
         </div>
         <div className="max-w-fit">
           <CardMeal />

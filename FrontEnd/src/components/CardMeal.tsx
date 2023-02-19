@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { FoodCard } from "./FoodCard"
 
+
 export function CardMeal() {
+
   return (
     <>
       <div className=" rounded-xl h-100 w-468 bg-gray-700 p-8">
