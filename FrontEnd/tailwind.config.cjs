@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      smart: "732px",
+      tablet: "1140px",
+      window: "1440px",
+    },
     extend: {
       colors: {
         orange: {
@@ -18,6 +23,7 @@ module.exports = {
       width: {
         85: "352px",
         516: "516px",
+        540: "540px",
         468: "468px",
       },
       height: {
