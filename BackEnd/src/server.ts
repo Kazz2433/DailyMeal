@@ -4,12 +4,14 @@ import cors from 'cors'
 
 const app = express()
 
+const port = process.env.PORT || 30001
+
 app.use(express.json())
 app.use(cors({
     origin:'*'
 }))
 app.use(router)
 
-app.listen(3001, () => {
-    console.log('SERVER RUNNING')
+app.listen(port, () => {
+  console.log("SERVER RUNNING")
 })
