@@ -1,10 +1,10 @@
-# Daily Meal by _RouterDev_
+# 🥞 Daily Meal by _RouterDev_
 
 #### **A browser based meal plan generator app** that allows the user to generate a healthy meal of the day
 
 ---
 
-## Product features
+## Product features 📷
 
 ![Web Version](FrontEnd/src/assets/Homepage.png)
 ![Mobile Version](FrontEnd/src/assets/Mobile%20Bottom.png) ![Mobile Version2](FrontEnd/src/assets/Mobile%20Top.png)
@@ -19,11 +19,11 @@ Having a regulated and healthy diet is the first step towards better health and 
 
 This is the week 1 project. If you want to know more about our project here is a link for you to follow:
 
-- [PROJECT ONE WEEK](https://github.com/aquiname)
+- [PROJECT ONE WEEK](https://github.com/aquiname) 💻
 
 ---
 
-## Technologies used
+## 🌐 Technologies used
 
 - [Spoonacular API](https://spoonacular.com/)
 - [ReactJS + Vite](https://vitejs.dev/)
