@@ -23,6 +23,38 @@ This is the week 1 project. If you want to know more about our project here is a
 
 ---
 
+### How to configure
+
+## Clone Repository
+
+    git clone https://github.com/revogabe/DailyMeal
+
+## Front-end
+
+    cd FrontEnd
+
+Install Dependencies:
+
+    yarn install
+
+Run Front:
+
+    yarn run dev
+
+## Back-end
+
+    cd BackEnd
+
+Install Dependencies:
+
+    npm install
+
+Run Server:
+
+    npm start
+
+---
+
 ## 🌐 Technologies used
 
 - [Spoonacular API](https://spoonacular.com/)
