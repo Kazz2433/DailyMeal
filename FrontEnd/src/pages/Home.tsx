@@ -7,10 +7,18 @@ import { GithubButton } from "../components/GithubButton"
 export default function Home() {
   const [meals, setMeals] = useState([])
 
-  async function handleButtonReq() {
-    const response = await api.get("/")
+  function handleButtonReset() {
+    setMeals([])
+  }
 
-    const data = response.data.map((item) => [item.nome, item.sourceUrl])
+  async function handleButtonReq() {
+    const titleMeal = ["Breakfast", "Lunch", "Dinner"]
+    const response = await api.get("/")
+    const data = response.data.map((item, index) => [
+      item.nome,
+      item.sourceUrl,
+      titleMeal[index],
+    ])
 
     console.log(response.data)
     setMeals(data)
@@ -33,7 +41,7 @@ export default function Home() {
           </button>
         </div>
         <div className="w-full flex items-end justify-end">
-          <MealCard result={meals} />
+          <MealCard handleButtonReset={handleButtonReset} result={meals} />
         </div>
       </div>
       <div className="tablet:hidden flex w-full my-12 ">

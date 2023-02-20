@@ -3,9 +3,10 @@ import { FoodCard } from "./FoodCard"
 
 type Props = {
   result: string[]
+  handleButtonReset: () => void
 }
 
-export function MealCard({ result }: Props) {
+export function MealCard({ result, handleButtonReset }: Props) {
   return (
     <>
       <div className=" rounded-xl h-full w-full tablet:min-w-max tablet:max-w-xl tablet:w-full bg-gray-700 px-8 py-12 justify-start  max-smart:px-[14px] max-smart:py-[32px]">
@@ -24,7 +25,7 @@ export function MealCard({ result }: Props) {
             return (
               <FoodCard
                 key={key}
-                title="Breakfast"
+                title={meals[2]}
                 subtitle={meals[0]}
                 clickMeal={handleClickGithub}
               />
@@ -33,6 +34,7 @@ export function MealCard({ result }: Props) {
         </div>
         {
           <button
+            onClick={handleButtonReset}
             className=" bg-orange-500
             flex-row 
             flex 
@@ -42,12 +44,14 @@ export function MealCard({ result }: Props) {
             w-full
             rounded-lg 
             text-xl
+            font-bold
             
             cursor-pointer
             transition-all
             duration-200
             ease-out
-            hover:opacity-80
+            hover:text-orange-500
+            hover:bg-white
             hover:scale-105
           "
           >
