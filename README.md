@@ -7,7 +7,7 @@
 ## Product features
 
 ![Web Version](FrontEnd/src/assets/Homepage.png)
-![Mobile Version](FrontEnd/src/assets/Mobile%20Bottom.png)
+![Mobile Version](FrontEnd/src/assets/Mobile%20Bottom.png)![Mobile Version2](FrontEnd/src/assets/Mobile%20Top.png)
 
 ---
 
@@ -25,8 +25,8 @@ This is the week 1 project. If you want to know more about our project here is a
 
 ## Technologies used
 
-- [Spoonacular API](https://spoonacular.com/) _returns meal plan_
-- [ReactJS + Vite](https://vitejs.dev/) _framework_
+- [Spoonacular API](https://spoonacular.com/)
+- [ReactJS + Vite](https://vitejs.dev/)
 - [Axios](https://axios-http.com/)
 - [Tailwind](https://tailwindcss.com/)
 
@@ -36,5 +36,5 @@ This is the week 1 project. If you want to know more about our project here is a
 
 **RouterDev | Team Members**
 
-- [Daniel Gabriel](https://kysper.github.io/)
-- [Kelvin Quida](https://timlukens.com/)
+- [Daniel Gabriel](https://github.com/revogabe)
+- [Kelvin Quida](https://github.com/kazz2433)
