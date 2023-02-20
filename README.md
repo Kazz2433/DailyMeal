@@ -23,13 +23,13 @@ This is the week 1 project. If you want to know more about our project here is a
 
 ---
 
-### How to configure ⚙️
+## ⚙️ How to configure
 
-## Clone Repository
+### Clone Repository
 
     git clone https://github.com/revogabe/DailyMeal
 
-## Front-end
+### Front-end
 
     cd FrontEnd
 
@@ -41,7 +41,7 @@ Run Front:
 
     yarn run dev
 
-## Back-end
+### Back-end
 
     cd BackEnd
 
