@@ -5,16 +5,14 @@ import { api } from "../lib/axios"
 import { GithubButton } from "../components/GithubButton"
 
 export default function Home() {
-  const [meals, setMeals] = useState([''])
+  const [meals, setMeals] = useState([""])
 
   async function handleButtonReq() {
     const response = await api.get("/")
 
-    const data = response.data.map(item => item.nome)
+    const data = response.data.map((item) => item.nome)
 
     setMeals(data)
-
-    
   }
 
   return (
@@ -34,7 +32,7 @@ export default function Home() {
           </button>
         </div>
         <div className="w-full flex items-end justify-end">
-          <MealCard breakfast={meals} lunch={meals} dinner={meals} />
+          <MealCard result={meals} />
         </div>
       </div>
       <div className="tablet:hidden flex w-full my-12 ">

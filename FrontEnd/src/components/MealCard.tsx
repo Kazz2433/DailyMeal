@@ -1,17 +1,11 @@
-import React, {  useState } from "react"
-import { api } from "../lib/axios"
+import React, { useState } from "react"
 import { FoodCard } from "./FoodCard"
 
 type Props = {
-  breakfast: string[],
-  lunch: string[],
-  dinner: string[],
+  result: string[]
 }
 
-export function MealCard({breakfast , lunch, dinner}: Props) {
-  
-
-
+export function MealCard({ result }: Props) {
   return (
     <>
       <div className=" rounded-xl h-full w-full tablet:min-w-max tablet:max-w-xl tablet:w-full bg-gray-700 px-8 py-12 justify-start  max-smart:px-[14px] max-smart:py-[32px]">
@@ -20,33 +14,33 @@ export function MealCard({breakfast , lunch, dinner}: Props) {
           <span className="ml-1.5 text-orange-500">| TODAY</span>
         </div>
         <div className="flex flex-col gap-4 ">
-          <FoodCard title="Breakfast" subtitle={breakfast} />
-          <FoodCard title="Lunch" subtitle={lunch} />
-          <FoodCard title="Snack" subtitle={dinner} />
-
+          {result.map((meals)  => {
+            return <FoodCard key={meals} title="Breakfast" subtitle={result} />
+          })}
         </div>
-{/*         <button
-          onClick={handleNameChange}
-          className=" bg-orange-500
-          flex 
-          flex-row 
-          items-center justify-center 
-          py-4 px-11 
-          mt-24
-          w-full
-          rounded-lg 
-          text-xl
-
-          cursor-pointer
-          transition-all
-          duration-200
-          ease-out
-          hover:opacity-80
-          hover:scale-105
+        {
+          <button
+            className=" bg-orange-500
+            flex-row 
+            flex 
+            items-center justify-center 
+            py-4 px-11 
+            mt-24
+            w-full
+            rounded-lg 
+            text-xl
+            
+            cursor-pointer
+            transition-all
+            duration-200
+            ease-out
+            hover:opacity-80
+            hover:scale-105
           "
-        >
-          Reset
-        </button> */}
+          >
+            Reset
+          </button>
+        }
       </div>
     </>
   )
