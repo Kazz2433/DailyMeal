@@ -28,6 +28,12 @@ This is the week 1 project. If you want to know more about our project here is a
 ### Clone Repository
 
     git clone https://github.com/revogabe/DailyMeal
+    
+### Change API Key
+- register account in: ![Spoonacular](https://spoonacular.com/)
+- change API key in:
+
+    BackEnd/src/libs/axios.ts
 
 ### Front-end
 
