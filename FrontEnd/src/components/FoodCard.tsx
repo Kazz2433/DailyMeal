@@ -2,10 +2,10 @@ import React from "react"
 
 type Props = {
   title: string
-  subtitle: string
+  subtitle: string[]
 }
-
 export function FoodCard({ title, subtitle }: Props) {
+  
   return (
     <>
       <div
@@ -30,7 +30,7 @@ export function FoodCard({ title, subtitle }: Props) {
           "
       >
         <h1 className=" text-orange-500 font-bold">{title} |</h1>
-        <span className="ml-1.5 font-normal"> {subtitle}</span>
+        <span className="ml-1.5 font-normal">{subtitle}</span>
       </div>
     </>
   )
