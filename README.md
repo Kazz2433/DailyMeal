@@ -4,7 +4,7 @@
 
 ---
 
-## Product features 📷
+## 📷 Product features
 
 ![Web Version](FrontEnd/src/assets/Homepage.png)
 ![Mobile Version2](FrontEnd/src/assets/Mobile%20Top.png) ![Mobile Version](FrontEnd/src/assets/Mobile%20Bottom.png)
@@ -64,7 +64,7 @@ Run Server:
 
 ---
 
-## Authors
+## 🙋 Authors
 
 **RouterDev | Team Members**
 
