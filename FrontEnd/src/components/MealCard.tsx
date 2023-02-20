@@ -9,15 +9,7 @@ type Props = {
 }
 
 export function MealCard({breakfast , lunch, dinner}: Props) {
-  const [meals, setMeals] = useState([''])
-
-  async function handleButtonReq() {
-    const response = await api.get("/")
-
-    const data = response.data.map(item => item.nome)
-
-    setMeals(data)
-  }
+  
 
 
   return (
@@ -33,7 +25,7 @@ export function MealCard({breakfast , lunch, dinner}: Props) {
           <FoodCard title="Snack" subtitle={dinner} />
 
         </div>
-{      <button
+{/*         <button
           onClick={handleNameChange}
           className=" bg-orange-500
           flex 
@@ -54,7 +46,7 @@ export function MealCard({breakfast , lunch, dinner}: Props) {
           "
         >
           Reset
-        </button> }
+        </button> */}
       </div>
     </>
   )
