@@ -14,8 +14,21 @@ export function MealCard({ result }: Props) {
           <span className="ml-1.5 text-orange-500">| TODAY</span>
         </div>
         <div className="flex flex-col gap-4 ">
-          {result.map((meals)  => {
-            return <FoodCard key={meals} title="Breakfast" subtitle={result} />
+          {result.map((meals, key) => {
+            const resultUrl = meals[1]
+
+            const handleClickGithub = () => {
+              window.open(resultUrl, "_blank")
+            }
+            console.log(meals)
+            return (
+              <FoodCard
+                key={key}
+                title="Breakfast"
+                subtitle={meals[0]}
+                clickMeal={handleClickGithub}
+              />
+            )
           })}
         </div>
         {

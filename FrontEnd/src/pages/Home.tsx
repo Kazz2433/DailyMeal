@@ -5,13 +5,14 @@ import { api } from "../lib/axios"
 import { GithubButton } from "../components/GithubButton"
 
 export default function Home() {
-  const [meals, setMeals] = useState([""])
+  const [meals, setMeals] = useState([])
 
   async function handleButtonReq() {
     const response = await api.get("/")
 
-    const data = response.data.map((item) => item.nome)
+    const data = response.data.map((item) => [item.nome, item.sourceUrl])
 
+    console.log(response.data)
     setMeals(data)
   }
 

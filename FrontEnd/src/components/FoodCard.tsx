@@ -2,13 +2,14 @@ import React from "react"
 
 type Props = {
   title: string
-  subtitle: string[]
+  subtitle: string
+  clickMeal: () => void
 }
-export function FoodCard({ title, subtitle }: Props) {
-  
+export function FoodCard({ title, subtitle, clickMeal, ...rest }: Props) {
   return (
     <>
       <div
+        onClick={clickMeal}
         className="
         bg-background-900 
           flex 
