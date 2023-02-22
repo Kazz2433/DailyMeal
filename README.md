@@ -5,7 +5,7 @@
 ---
 ## 🌐 Deploy
 
-![Website Live](daily-meal.vercel.app)
+[Website Live](daily-meal.vercel.app)
 
 ---
 
