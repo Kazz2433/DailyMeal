@@ -11,9 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
-*.src/lib/axios.ts
 
 # Editor directories and files
+.src/lib*
 .vscode/*
 !.vscode/extensions.json
 .idea
