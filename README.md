@@ -3,6 +3,11 @@
 #### **A browser based meal plan generator app** that allows the user to generate a healthy meal of the day
 
 ---
+## 🌐 Deploy
+
+[Website Live](daily-meal.vercel.app)
+
+---
 
 ## 📷 Product features
 
