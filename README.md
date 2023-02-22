@@ -6,8 +6,8 @@
 
 ## 📷 Product features
 
-![Web Version](FrontEnd/src/assets/Homepage.png)
-![Mobile Version2](FrontEnd/src/assets/Mobile%20Top.png) ![Mobile Version](FrontEnd/src/assets/Mobile%20Bottom.png)
+![Web Version](src/assets/Homepage.png)
+![Mobile Version2](src/assets/Mobile%20Top.png) ![Mobile Version](src/assets/Mobile%20Bottom.png)
 
 ---
 
